@@ -15,6 +15,8 @@ ui <- dashboardPage(
       # First tab content
       tabItem(tabName = "p-value",
               fluidRow(
+                valueBoxOutput("ppv"),
+                
                 numericInput("pvalue", label = h5("What is your p-value?"), 
                              value = 0.05, min = 0, max = 1, step = 0.01),
           
@@ -23,12 +25,7 @@ ui <- dashboardPage(
                              value = 0.2, min = 0, max = 1, step = 0.1),
                 
                 numericInput("R", label = h5("Replication rate"), 
-                             value = 0.5, min = 0, max = 1, step = 0.01),
-                
-                hr(),
-                h5("Your positive predicitve value is"),
-                fluidRow(column(3, verbatimTextOutput("value")))
-                
+                             value = 0.5, min = 0, max = 1, step = 0.01)
               )
               
       ),
@@ -43,12 +40,19 @@ ui <- dashboardPage(
 
 server <- function(input, output) {
   
-  output$value <- renderPrint({ 
+  output$ppv <- renderValueBox({
+    # The downloadRate is the number of rows in pkgData since
+    # either startTime or maxAgeSecs ago, whichever is later.
     ppv <- input$R * (1 - input$beta) / (input$R - input$R*input$beta + input$pvalue)
     ppv <- round (ppv, 4)
-    print(ppv)
-    })
-  
+    
+    valueBox(
+      value = formatC(ppv, digits = 2, format = "f"),
+      subtitle = "Probablity of true positive",
+      icon = icon("area-chart"),
+      color = "aqua"
+    )
+  })
 
 }
 
