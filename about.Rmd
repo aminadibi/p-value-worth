@@ -1,0 +1,18 @@
+#### About 
+
+This web application provides an interactive interface to explore the positive predictive value of clinical trials that have shown a positive result.
+
+#### Citation
+
+Please cite this paper when using the results of this web application:
+
+``` Adibi A, Sin D, Sadatsafavi M, 'Lowering the P Value Threshold Is Inappropriate for Phase 3 Randomized Clinical Trials' (Submitted to JAMA)```
+
+#### Bug Report
+
+Please report bugs and issues [here] (https://github.com/aminadibi/p-value-worth/issues).
+
+                         
+#### Credits
+
+p-value meter is created by [Amin Adibi](http://resp.core.ubc.ca/team/Amin_Adibi), [Kate Johnson](http://resp.core.ubc.ca/team/Kate_Johnson), and [Mohsen Sadatsafavi](http://resp.core.ubc.ca/team/Mohsen_Sadatsafavi) at the University of British Columbia. 
