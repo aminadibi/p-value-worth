@@ -19,7 +19,6 @@ ui <- dashboardPage(
       # First tab content
       tabItem(tabName = "p-value",
               includeMarkdown("intro.Rmd"),
-              valueBoxOutput("ppv", width = 12),
               tags$b("Enter inputs:"),
               #valueBoxOutput("npv"),
               fluidRow(
@@ -44,6 +43,8 @@ ui <- dashboardPage(
                 )
               
               ),
+              valueBoxOutput("ppv", width = 12),
+              
               #includeMarkdown("intro.Rmd"),
               includeMarkdown("methods.Rmd")
       ),
