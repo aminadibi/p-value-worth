@@ -1,4 +1,4 @@
 ### **What is my p-value worth?**
 
-After a study finds a positive effect, one might want to know whether the observed positive is a true positive. 
-This web app calculates the positive predicitve value of the study based on the observed p-value, statistical power, and *a priori* knowledge of replicability of findings.
+After a study finds a positive effect, one might want to know whether the observed positive is a *true* positive. 
+This web app calculates the positive predicitve value of the study based on the observed p-value, statistical power, and the *a priori* knowledge of the replicability of findings. 

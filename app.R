@@ -30,7 +30,7 @@ ui <- dashboardPage(
                 ),
               
                 column(4, 
-                     "Statistical Power (1-β)", tags$span(style="color:red", "*"), ":",
+                     "Statistical power (1-β)", tags$span(style="color:red", "*"), ":",
                      sliderInput("power", width = '100%', label = "", 
                                   value = 0.8, min = 0, max = 1, step = 0.1)
 

@@ -1,15 +1,12 @@
-### **Definitions**
+### **How to use this app:**
+
+**Prior probability:** Prior probability of true positive or the proportion of similar positive studies that have historically been successfully replicated. Prior probability is context-specific. For major clinical trials, a study by Ioannidis showed that of the 29 major RCTs that were challenged in replication studies, 20 were successfully replicated, 6 RCTs showed smaller effects compared to what was intitially observed, and 3 were contradicted [1]. As such, a replication probablity of 69% is calculated for major RCTs. In psychology, reproducibility projects have reported successful replication of 36%-50% of studies [2, 3]. Replication rate is believed to be lower in basic and preclinical research, with estimates varying from 10% to 25% [4]. 
+
+**Statistical power (1-β):** The probability that the study will detect an effect when an effect is present. Power depends on the significance level, sample size, and the magnitude of the effect. Clinical trials often have a statistical power of 80% or 90%.
 
 **p-value:** Observed p-value
-
-**Statistical Power (1-β):** Acceptable false negative error rates. Clinical trials often have a statistical power of 80% or 90%, which corresponds to a β of 0.2 or 0.1.
-              
-**Prior probability:** Prior probability of true positive (i.e. the replicability of positive study findings). In other words, what proportion of similar positive studies have historically been successfully replicated. For major clinical trials, a study by Ioannidis showed reported that of 29 major RCTs that were challenged in replication studies, 20 were successfully replicated, 6 RCTs showed smaller effects compared to what was intitially observed, and 3 were contradicted (Tables 1 and 2, in [1]). That leads to a replication probablity of 69% for major RCTs. In psychology, replication studies have reported successfull replication in 36%-50% of cases [2, 3].
-
-**Calculation Method** PPV = (1 − β)R⁄(R − βR + α) where α is false positive error rate, β is false-negative error rate, and R is the 
-ratio of true relationships to no relationships.
-
-This formula can be derived from a 2x2 table, as shown in [4]." 
+        
+**Calculation method:** Please refer to the 2x2 table in [5]. 
 
 **References:**
 
@@ -17,9 +14,10 @@ This formula can be derived from a 2x2 table, as shown in [4]."
 
 2. Open Science Collaboration. Estimating the reproducibility of psychological science. Science (80- ). 2015;349(6251):aac4716-aac4716. doi:10.1126/science.aac4716
 
-
 3. Klein RA, Vianello M, Hasselman F, et al. Many Labs 2: Investigating Variation in Replicability Across Sample and Setting. doi:10.31234/osf.io/9654g.
 
-4. Ioannidis JPA. Why most published research findings are false. PLoS Med. 2005;2(8):0696-0701. doi:10.1371/journal.pmed.0020124
+4. Begley CG, Ioannidis JPA. Reproducibility in science: Improving the standard for basic and preclinical research. Circ Res. 2015;116(1):116-126. doi:10.1161/CIRCRESAHA.114.303819
+
+5. Ioannidis JPA. Why most published research findings are false. PLoS Med. 2005;2(8):0696-0701. doi:10.1371/journal.pmed.0020124
               
               
