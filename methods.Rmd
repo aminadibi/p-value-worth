@@ -8,7 +8,7 @@ Use the slider inputs to choose the observed p-value, statistical power of the s
 
 **p-value:** Observed p-value
         
-**Calculation method:** Please refer to the 2x2 table in [5]. 
+**Calculation method:** Please refer to [5]. 
 
 **References:**
 
