@@ -39,7 +39,7 @@ ui <- dashboardPage(
                 column(4, 
                        "Prior probability (%)", tags$span(style="color:red", "*"), ":",
                        sliderInput("R", width = '100%', label = "", 
-                                  value = 69, min = 0, max = 100, step = 1)
+                                  value = 68, min = 0, max = 100, step = 1)
                 )
               
               ),
